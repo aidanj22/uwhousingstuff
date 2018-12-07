@@ -26,7 +26,7 @@ namespace UWHousing.BLL
 
         ///Retrieves payment summary for student
 
-        public IList<PaymentHistory> PaymentHistoryViewer.GetPaymentHistory(student_id) ///this seems pretty wrong
+        public IList<PaymentHistory> GetPaymentHistory(student_id) ///this seems pretty wrong
         {
             return _paymenthistoryDAO.GetPaymentHistory(student_id);
         }
