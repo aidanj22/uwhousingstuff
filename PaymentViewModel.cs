@@ -11,7 +11,7 @@ namespace UWHousing.Entities.ViewModels
     /// </summary>
     public class PaymentViewModel
     {
-        public int StudentID { get; set; }
+        public int StudentID { get; set; } //probably dont need this
         public int PaymentAmount { get; set; }
         public DateTime PaymentDate { get; set; }
 
