@@ -9,10 +9,10 @@ namespace UWHousing.Entities.ViewModels
     /// <summary>
     /// View model for payments
     /// </summary>
-    public class OrderItemViewModel
+    public class OrderItemViewModel //iList of payments within
     {
         public PaymentVieweModel StudentID { get; set; }
-        //loop through and compile list of payments
+        //join in data code to join student table with payment table, dapper multiplemapping
             public PaymentViewModel PaymentAmount { get; set; }
             public DateTime RequestDate { get; set; }
     }
