@@ -11,7 +11,7 @@ namespace UWHousing.Entities.DTO
     {
         public NewStudentDTO()
         {
-            items = new List<NewStudentDTO>();
+
         }
 
         /// <summary>
@@ -37,7 +37,5 @@ namespace UWHousing.Entities.DTO
        
         public string meal_plan { get; set; }
 
-
-        public IList<NewStudentDTO> items { get; set; }
     }
 }
