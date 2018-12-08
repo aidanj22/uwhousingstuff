@@ -22,7 +22,7 @@ namespace UWHousing.Data
         {
             IList<RoomViewModel> room;
 
-            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["uwahousing"].ConnectionString))
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString))
             {
                 connection.Open();
 
@@ -38,6 +38,7 @@ namespace UWHousing.Data
     }
 }
 
+//Alternate version that I don't think is correct
 
 
 using System.Configuration;
