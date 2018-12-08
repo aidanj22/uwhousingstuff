@@ -9,8 +9,8 @@ namespace UWHousing.Entities.DTO
     /// </summary>
     public class NewStudentPaymentDTO
     {
-        public int student_id { get; set; }
-        public int payment_amount { get; set; }
-        public DateTime payment_date { get; set; } //could generate in business layer
+        public int StudentID { get; set; }
+        public int Paymentamount { get; set; }
+        public DateTime Paymentdate { get; set; } //could generate in business layer
     }
 }
