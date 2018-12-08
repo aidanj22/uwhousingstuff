@@ -11,21 +11,21 @@ namespace UWHousing.Entities.Persistence
 
         public static StudentDTO NOTFOUND = new StudentDTO
         {
-            student_id = -1,
-            first_name = 'a',
-            last_name = 'b',
-            building = 'c',
-            room_number = -1,
-            meal_plan = 'y',
+            StudentID = -1,
+            Firstname = 'a',
+            Lastname = 'b',
+            Buildingname = 'c',
+            Roomnumber = -1,
+            Mealplan = 'y', //will get axed
 
         };
 
-        public int student_id { get; set; }
-        public string first_name { get; set; }
-        public string last_name { get; set; }
-        public string building { get; set; }
-        public int room_number { get; set; }
-        public string meal_plan { get; set; }
+        public int StudentID { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string Buildingname { get; set; }
+        public int Roomnumber { get; set; }
+        public string Mealplan { get; set; } //will get axed
 
 
         //implementing a VERY rudimentary Equals method.  Only taking into account the student number
@@ -39,7 +39,7 @@ namespace UWHousing.Entities.Persistence
                 return false;
             }
 
-            return this.student_id.Equals(item.student_id);
+            return this.student_id.Equals(item.StudentID);
         }
 
         public override int GetHashCode()
