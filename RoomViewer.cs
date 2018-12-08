@@ -23,9 +23,9 @@ namespace UWHousing.BLL
         /// <summary>
         /// Returns view models of all rooms in a specific building
         /// </summary>
-        public IList<RoomViewModel> GetAllRoomnumberBYAssigned(string no)
+        public IList<RoomViewModel> GetAllOpenRoomsByBuilding(string Buildingname)
         {
-            return _room.GetAllRoomnumber(Buildingname);
+            return _room.GetOpenRooms(Buildingname);
         }
 
 
