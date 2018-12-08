@@ -65,8 +65,7 @@ namespace UWHousing.Data
         /// </summary>
         public RoomViewModel GetRoomnumber()
         {
-            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //I don't think this is right but we need to connect somewhere
-            {
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //uncertain
                 connection.Open();
                 IList<RoomViewModel> rooms = QueryForGetRoomnumber("room.Roomnumber=@Assigned = 'No'"); //not sure about the syntax here
                 return rooms.Count > 0 ? rooms : null;
