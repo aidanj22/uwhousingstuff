@@ -23,9 +23,9 @@ namespace UWHousing.BLL
         /// <summary>
         /// Returns specified student?
         /// </summary>
-        public List<StudentViewModel> GetStudent(student_id) //
+        public List<StudentViewModel> GetStudent(StudentID) //
         {
-            return _studentDAO.GetStudent(student_id);
+            return _studentDAO.GetStudent(StudentID);
         }
     }
 }
