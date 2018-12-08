@@ -27,7 +27,7 @@ namespace UWHousing.Data
                 connection.Open();
                 string sql //query
                     
-                connection.Execute(sql, new { newstudentDTO }o);
+                connection.Execute(sql, new { newstudentDTO });
             }
            
         }
