@@ -20,7 +20,7 @@ namespace UWHousing.Data
         /// <summary>
         /// returns full order details for a single order
         /// </summary>
-        public PaymentHistoryViewModel GetRunPaymentHistory(int student_id)
+        public PaymentHistoryViewModel GetRunPaymentHistory(int StudentID)
         {
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //I don't think this is right but we need to connect somewhere
             {
