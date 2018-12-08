@@ -22,7 +22,7 @@ namespace UWHousing.Data
         /// </summary>
         public void CreateStudent(NewStudentDTO newstudentDTO)
         {
-            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["uwhousing"].ConnectionString)) //placeholder
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //placeholder
             {
                 connection.Open();
                 string sql //query
