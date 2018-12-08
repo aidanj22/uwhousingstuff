@@ -23,5 +23,6 @@ namespace UWHousing.Data
         public BuildingViewModel GetBuildingname()
         {
             IList<BuildingViewModel> names = QueryForGetBuildingname("building.buildingname=@*");
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //Same as NewPaymentDAO
             return names.Count > 0 ? names : null;
         }
