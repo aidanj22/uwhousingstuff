@@ -22,7 +22,9 @@ namespace UWHousing.Data
         /// </summary>
         public BuildingViewModel GetBuildingname()
         {
-            IList<BuildingViewModel> names = QueryForGetBuildingname("building.buildingname=@*");
-            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //Same as NewPaymentDAO
-            return names.Count > 0 ? names : null;
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //I don't think this is right but we need to connect somewhere
+            {
+                connection.Open();
+                IList<BuildingViewModel> names = QueryForGetBuildingname("building.buildingname=@*");
+                return names.Count > 0 ? names : null;
         }
