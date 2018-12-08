@@ -22,7 +22,8 @@ namespace UWHousing.Data
         /// </summary>
         public PaymentHistoryViewModel GetRunPaymentHistory(int student_id)
         {
-            IList<PaymentHistoryViewModel> payments = QueryForGetRunPaymentHistory("payments.student_id=@student_id"); //syntax will likely change
+            IList<PaymentHistoryViewModel> payments = QueryForGetRunPaymentHistory("payments.student_id=@student_id");//syntax will likely change
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["UWHousing"].ConnectionString)) //I don't think this is right but we need to connect somewhere
             return payments.Count > 0 ? payments : null; //if this works it doesn't return everything we want/in the format we want it
         }
     }
