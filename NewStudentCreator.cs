@@ -34,12 +34,11 @@ namespace UWHousing.BLL
             // create the studentDTO for persistence and populate its properties
             StudentDTO studentDTO = new StudentDTO()
             {
-                student_id = newStudentDTO.student_id,
-                student_first_name = newStudentDTO.first_name,
-                student_last_name = newStudentDTO.last_name,
-                building_name = newStudentDTO.building_name,
-                room_number = newstudentDTO.room_number,
-                meal_plan = newstudentDTO.meal_plan,
+                StudentID = newStudentDTO.student_id,
+                FirstName = newStudentDTO.first_name,
+                Lastname = newStudentDTO.last_name,
+                Buildingname = newStudentDTO.building_name,
+                Roomnumber = newStudentDTO.room_number,
             };
             //formatting/syntax might be off here
         /// <summary>
