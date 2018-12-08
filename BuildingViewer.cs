@@ -21,7 +21,7 @@ namespace UWHousing.BLL
         }
 
         /// <summary>
-        /// Returns view models of all students at a particular store
+        /// Returns view models of all buildings
         /// </summary>
         public IList<BuildingViewModel> GetAllBuildingname()
         {
