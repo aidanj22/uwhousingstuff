@@ -31,11 +31,5 @@ namespace UWHousing.Entities.DTO
         public string Buildingname { get; set; }
         public int Roomnumber { get; set; }
 
-        /// <summary>
-        /// Meal plan info
-        /// </summary>
-       
-        public string Mealplan { get; set; } //will get axed
-
     }
 }
