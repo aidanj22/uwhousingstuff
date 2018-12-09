@@ -16,7 +16,6 @@ namespace UWHousing.Entities.Persistence
             Lastname = 'b',
             Buildingname = 'c',
             Roomnumber = -1,
-            Mealplan = 'y', //will get axed
 
         };
 
@@ -25,7 +24,6 @@ namespace UWHousing.Entities.Persistence
         public string Lastname { get; set; }
         public string Buildingname { get; set; }
         public int Roomnumber { get; set; }
-        public string Mealplan { get; set; } //will get axed
 
 
         //implementing a VERY rudimentary Equals method.  Only taking into account the student number
