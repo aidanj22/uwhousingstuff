@@ -16,7 +16,6 @@ namespace UWHousing.Entities.ViewModels
         public string LastName { get; set; }
         public string BuildingName { get; set; }
         public string RoomNumber { get; set; }
-        public string MealPlan { get; set; }
 
         public override string ToString()
         {
